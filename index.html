@@ -1,1 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Beginner Cameras 2026 – Find Your First Camera</title>
+<meta name="description" content="The best beginner cameras in 2026 — from instant film to mirrorless. Curated picks for every style and budget.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:       #0C0E12;
+    --surface:  #13161C;
+    --surface2: #191D26;
+    --border:   #252A36;
+    --blue:     #4B8EF0;
+    --blue-dim: #2A4D8A;
+    --green:    #3DBA6F;
+    --text:     #E8EAF0;
+    --muted:    #6E7585;
+    --label:    #9BA3B6;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .hero {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 72px 24px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% -20%, rgba(75,142,240,0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--blue);
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(52px, 8vw, 92px);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    color: var(--text);
+    margin-bottom: 20px;
+  }
+
+  .hero h1 span { color: var(--blue); }
+
+  .hero-sub {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--label);
+    max-width: 520px;
+    margin: 0 auto 36px;
+    line-height: 1.65;
+  }
+
+  .hero-stats {
+    display: inline-flex;
+    gap: 32px;
+    padding: 16px 28px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-stat { text-align: center; }
+
+  .hero-stat-num {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    display: block;
+  }
+
+  .hero-stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .filter-bar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .filter-bar::-webkit-scrollbar { display: none; }
+
+  .filter-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    padding: 14px 0;
+    margin-right: 4px;
+    flex-shrink: 0;
+  }
+
+  .filter-btn {
+    padding: 5px 14px;
+    border-radius: 100px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--label);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.15s;
+    flex-shrink: 0;
+  }
+
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--blue);
+    border-color: var(--blue);
+    color: #fff;
+  }
+
+  .main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+  }
+
+  .count-label { font-size: 12px; color: var(--muted); }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue-dim);
+  }
+
+  .card-image {
+    aspect-ratio: 4/3;
+    background: var(--surface2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    position: relative;
+  }
+
+  .card-image img { width: 100%; height: 100%; object-fit: cover; }
+
+  .rank-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(12,14,18,0.85);
+    color: var(--blue);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid var(--blue-dim);
+    backdrop-filter: blur(4px);
+  }
+
+  .tag-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--blue);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 100px;
+  }
+
+  .card-body {
+    padding: 20px 22px 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-category {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--blue);
+  }
+
+  .card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    color: var(--text);
+  }
+
+  .card-desc {
+    font-size: 13.5px;
+    font-weight: 300;
+    color: var(--label);
+    line-height: 1.65;
+    flex: 1;
+  }
+
+  .card-pros {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card-pros li {
+    font-size: 12.5px;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .card-pros li::before {
+    content: '✓';
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    margin-top: 4px;
+    gap: 12px;
+  }
+
+  .card-price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .card-price-label {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 3px;
+  }
+
+  .card-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--blue);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity 0.15s, transform 0.1s;
+    white-space: nowrap;
+  }
+
+  .card-btn:hover { opacity: 0.85; transform: scale(1.03); }
+
+  .card-btn svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+  .card.featured {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    max-height: 360px;
+  }
+
+  .card.featured .card-image {
+    width: 380px;
+    min-width: 380px;
+    aspect-ratio: unset;
+    font-size: 88px;
+  }
+
+  .card.featured .card-body {
+    padding: 28px 32px;
+    justify-content: center;
+  }
+
+  .card.featured .card-title { font-size: 30px; }
+
+  .seller-section { margin-top: 72px; }
+
+  .seller-section-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+
+  .seller-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .seller-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 28px 28px 24px;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .seller-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    flex-shrink: 0;
+  }
+
+  .seller-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.05em;
+    color: var(--text);
+  }
+
+  .seller-tagline { font-size: 13px; color: var(--muted); margin-top: 2px; }
+
+  .seller-since {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: right;
+  }
+
+  .seller-since strong {
+    display: block;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    color: var(--label);
+  }
+
+  .seller-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0;
+  }
+
+  .seller-stat {
+    padding: 20px 24px;
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .seller-stat:last-child { border-right: none; }
+
+  .seller-stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    color: var(--blue);
+    display: block;
+  }
+
+  .seller-stat-label {
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+  }
+
+  .seller-ratings {
+    padding: 24px 28px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .ratings-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+
+  .rating-rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 32px;
+  }
+
+  .rating-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .rating-name { font-size: 13px; color: var(--label); flex-shrink: 0; }
+
+  .rating-bar {
+    flex: 1;
+    height: 4px;
+    background: var(--border);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+
+  .rating-bar-fill {
+    height: 100%;
+    width: 100%;
+    background: var(--green);
+    border-radius: 100px;
+  }
+
+  .rating-score {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--green);
+    flex-shrink: 0;
+    min-width: 28px;
+    text-align: right;
+  }
+
+  .seller-body { padding: 24px 28px; }
+
+  .seller-body p {
+    font-size: 14px;
+    color: var(--label);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+
+  .seller-body p:last-child { margin-bottom: 0; }
+
+  .disclaimer-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+
+  .disclaimer-pill::before { content: 'ℹ'; color: var(--blue); font-size: 13px; }
+
+  .disclosure {
+    margin-top: 48px;
+    padding: 20px 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .disclosure strong { color: var(--label); }
+
+  .site-footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 680px) {
+    .card.featured { flex-direction: column; max-height: none; grid-column: auto; }
+    .card.featured .card-image { width: 100%; min-width: unset; aspect-ratio: 4/3; font-size: 56px; }
+    .rating-rows { grid-template-columns: 1fr; }
+    .seller-since { margin-left: 0; text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="hero-eyebrow">Curated Guide · 2026 Edition</p>
+  <h1>Best Beginner <span>Cameras</span></h1>
+  <p class="hero-sub">Five cameras for five different kinds of beginner — from first-time shooters to content creators ready to get serious.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num">5</span>
+      <span class="hero-stat-label">Cameras Reviewed</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">$219–$1,620</span>
+      <span class="hero-stat-label">Price Range</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num">2026</span>
+      <span class="hero-stat-label">Last Updated</span>
+    </div>
+  </div>
+</header>
+
+<nav class="filter-bar" aria-label="Filter cameras">
+  <span class="filter-label">Filter:</span>
+  <button class="filter-btn active" onclick="filterCards('all', this)">All</button>
+  <button class="filter-btn" onclick="filterCards('instant', this)">Instant / Creative</button>
+  <button class="filter-btn" onclick="filterCards('travel', this)">Travel Zoom</button>
+  <button class="filter-btn" onclick="filterCards('mirrorless', this)">Mirrorless</button>
+  <button class="filter-btn" onclick="filterCards('creator', this)">Creator</button>
+  <button class="filter-btn" onclick="filterCards('advanced', this)">Advanced</button>
+</nav>
+
+<main class="main">
+  <div class="section-header">
+    <h2 class="section-title">The Picks</h2>
+    <span class="count-label" id="count-label">Showing 5 cameras</span>
+  </div>
+
+  <div class="grid" id="camera-grid">
+
+    <!-- 1. INSTAX — FEATURED -->
+    <div class="card featured" data-category="instant">
+      <div class="card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/best-beginner-cameras/main/image1.jpg" alt="Camera 1" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <span class="rank-badge">#1 Pick</span>
+        <span class="tag-badge">Most Fun</span>
+      </div>
+      <div class="card-body">
+        <span class="card-category">Instant / Creative</span>
+        <h3 class="card-title">FUJIFILM Instax Mini EVO Hybrid Instant Camera</h3>
+        <p class="card-desc">Not a traditional learning camera — it's a creativity-first device. Shoot digitally, choose your favorites, and print them on the spot. Zero technical barrier and maximum instant gratification.</p>
+        <ul class="card-pros">
+          <li>No technical barrier to entry</li>
+          <li>Instant physical prints every time</li>
+          <li>Low-pressure, high-fun experience</li>
+        </ul>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">$219.95</div>
+            <div class="card-price-label">eBay listing</div>
+          </div>
+          <a class="card-btn" href="https://ebay.us/gSnv4p" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. CANON SX740 -->
+    <div class="card" data-category="travel">
+      <div class="card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/best-beginner-cameras/main/image2.jpg" alt="Camera 2" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <span class="rank-badge">#2</span>
+      </div>
+      <div class="card-body">
+        <span class="card-category">Travel Zoom</span>
+        <h3 class="card-title">Canon PowerShot SX740 HS</h3>
+        <p class="card-desc">Compact body, massive 40× optical zoom. The natural next step for anyone wanting more than a smartphone can offer — without lugging a big camera.</p>
+        <ul class="card-pros">
+          <li>Extremely simple auto mode</li>
+          <li>40× optical zoom reach</li>
+          <li>Lightweight and pocket-friendly</li>
+        </ul>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">$719.95</div>
+            <div class="card-price-label">eBay listing</div>
+          </div>
+          <a class="card-btn" href="https://ebay.us/cXtPWc" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. CANON M50 -->
+    <div class="card" data-category="mirrorless">
+      <div class="card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/best-beginner-cameras/main/image3.jpg" alt="Camera 3" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <span class="rank-badge">#3</span>
+        <span class="tag-badge">Top Rated</span>
+      </div>
+      <div class="card-body">
+        <span class="card-category">Beginner Mirrorless</span>
+        <h3 class="card-title">Canon EOS M50</h3>
+        <p class="card-desc">One of the most-recommended beginner mirrorless cameras ever made. Simple enough for auto mode on day one, powerful enough to grow into full manual photography over time.</p>
+        <ul class="card-pros">
+          <li>Flip screen for selfies and video</li>
+          <li>Beginner-friendly menus</li>
+          <li>Reliable autofocus performance</li>
+        </ul>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">$799.95</div>
+            <div class="card-price-label">eBay listing</div>
+          </div>
+          <a class="card-btn" href="https://ebay.us/ZimEiz" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. SONY A6400 -->
+    <div class="card" data-category="creator">
+      <div class="card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/best-beginner-cameras/main/image4.jpg" alt="Camera 4" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <span class="rank-badge">#4</span>
+        <span class="tag-badge">Creator Pick</span>
+      </div>
+      <div class="card-body">
+        <span class="card-category">Creator Focused</span>
+        <h3 class="card-title">Sony Alpha a6400</h3>
+        <p class="card-desc">A serious step-up camera with industry-leading autofocus. Built for content creators who want professional image quality in a compact, travel-ready body.</p>
+        <ul class="card-pros">
+          <li>Fast and accurate real-time tracking AF</li>
+          <li>Excellent image and video quality</li>
+          <li>Compact but expandable lens system</li>
+        </ul>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">$839.95</div>
+            <div class="card-price-label">eBay listing</div>
+          </div>
+          <a class="card-btn" href="https://ebay.us/Huu9s0" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. CANON R7 -->
+    <div class="card" data-category="advanced">
+      <div class="card-image">
+        <img src="https://raw.githubusercontent.com/foodmaxxing/best-beginner-cameras/main/image5.jpg" alt="Camera 5" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        <span class="rank-badge">#5</span>
+        <span class="tag-badge">Long-Term Buy</span>
+      </div>
+      <div class="card-body">
+        <span class="card-category">Advanced Beginner</span>
+        <h3 class="card-title">Canon EOS R7</h3>
+        <p class="card-desc">A long-term investment for anyone serious about photography or video. Buy it as a beginner and still be using it as an advanced shooter five years from now.</p>
+        <ul class="card-pros">
+          <li>Blazing-fast autofocus for sports and action</li>
+          <li>Future-proof Canon RF lens ecosystem</li>
+          <li>Excellent video specs for creators</li>
+        </ul>
+        <div class="card-footer">
+          <div>
+            <div class="card-price">$1,619.95</div>
+            <div class="card-price-label">eBay listing</div>
+          </div>
+          <a class="card-btn" href="https://ebay.us/d7ZJIt" target="_blank" rel="noopener">
+            View on eBay
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ABOUT THE SELLER -->
+  <section class="seller-section">
+    <h2 class="seller-section-heading">About the Seller</h2>
+    <div class="seller-card">
+      <div class="seller-header">
+        <div class="seller-logo">📷</div>
+        <div>
+          <div class="seller-name">Red Tag Camera</div>
+          <div class="seller-tagline">Serving photographers and creators since 2007</div>
+        </div>
+        <div class="seller-since">
+          <strong>18+ yrs</strong>
+          On eBay since Aug 2007
+        </div>
+      </div>
+      <div class="seller-stats">
+        <div class="seller-stat">
+          <span class="seller-stat-num">100%</span>
+          <span class="seller-stat-label">Positive Feedback</span>
+        </div>
+        <div class="seller-stat">
+          <span class="seller-stat-num">387K</span>
+          <span class="seller-stat-label">Items Sold</span>
+        </div>
+        <div class="seller-stat">
+          <span class="seller-stat-num">95,317</span>
+          <span class="seller-stat-label">Feedback Reviews</span>
+        </div>
+        <div class="seller-stat">
+          <span class="seller-stat-num">5.0</span>
+          <span class="seller-stat-label">Overall Rating</span>
+        </div>
+      </div>
+      <div class="seller-ratings">
+        <p class="ratings-title">Detailed Seller Ratings</p>
+        <div class="rating-rows">
+          <div class="rating-row">
+            <span class="rating-name">Accurate description</span>
+            <div class="rating-bar"><div class="rating-bar-fill"></div></div>
+            <span class="rating-score">5.0</span>
+          </div>
+          <div class="rating-row">
+            <span class="rating-name">Reasonable shipping cost</span>
+            <div class="rating-bar"><div class="rating-bar-fill"></div></div>
+            <span class="rating-score">5.0</span>
+          </div>
+          <div class="rating-row">
+            <span class="rating-name">Shipping speed</span>
+            <div class="rating-bar"><div class="rating-bar-fill"></div></div>
+            <span class="rating-score">5.0</span>
+          </div>
+          <div class="rating-row">
+            <span class="rating-name">Communication</span>
+            <div class="rating-bar"><div class="rating-bar-fill"></div></div>
+            <span class="rating-score">5.0</span>
+          </div>
+        </div>
+      </div>
+      <div class="seller-body">
+        <p>Red Tag Camera has been operating on eBay since August 2007 — over 18 years of serving both professional photographers and everyday hobbyists. With 387,000+ items sold and a perfect 100% positive feedback rating across nearly 95,317 reviews, they're one of the most consistently trusted camera resellers on the platform.</p>
+        <p>Their inventory spans digital cameras, camcorders, lenses, lighting, film accessories, and electronics — making them a reliable one-stop source for used and refurbished photography gear at competitive prices. All four detailed seller ratings (description accuracy, shipping cost, shipping speed, and communication) sit at a perfect 5.0, which speaks for itself.</p>
+        <p>As always, review individual listings carefully since condition and warranty terms can vary. But for beginner-friendly, well-priced gear backed by a seller with a long and spotless track record, Red Tag Camera is a solid starting point.</p>
+        <span class="disclaimer-pill">Red Tag Camera is not affiliated with, responsible for, or aware of this article.</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="disclosure">
+    <strong>Affiliate Disclosure:</strong> This article contains affiliate links. If you purchase through them, a small commission may be earned at no additional cost to you. This content is for informational purposes only — always do your own research before purchasing.
+  </div>
+</main>
+
+<footer class="site-footer">
+  © 2026 Best Beginner Cameras Guide &nbsp;·&nbsp; Affiliate links may be used.
+</footer>
+
+<script>
+  function filterCards(category, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cards = document.querySelectorAll('#camera-grid .card');
+    let visible = 0;
+    cards.forEach(card => {
+      const match = category === 'all' || card.dataset.category === category;
+      card.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+    const featured = document.querySelector('.card.featured');
+    if (featured) {
+      if (category !== 'all') {
+        featured.classList.remove('featured');
+        featured.dataset.wasFeatured = 'true';
+      } else if (featured.dataset.wasFeatured) {
+        featured.classList.add('featured');
+      }
+    }
+    document.getElementById('count-label').textContent =
+      'Showing ' + visible + ' camera' + (visible !== 1 ? 's' : '');
+  }
+</script>
+
+</body>
+</html>
 
